@@ -1,0 +1,5 @@
+<p>name: <%= @employee.first_name %><%= @employee.last_name %></p>
+<p>AKA: <%= @employee.alias %></p>
+<p>title: <%= @employee.title %></p>
+<p>office: <%= @employee.office %></p>
+<%= image_tag @employee.img_url if !@employee.img_url.nil? %>
